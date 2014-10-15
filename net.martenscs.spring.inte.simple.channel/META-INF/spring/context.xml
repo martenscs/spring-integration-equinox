@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/integration" xmlns:stream="http://www.springframework.org/schema/integration/stream"
+	xmlns:si-jdbc="http://www.springframework.org/schema/integration/jdbc"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/integration/stream
+            http://www.springframework.org/schema/integration/stream/spring-integration-stream-2.2.xsd
+			http://www.springframework.org/schema/integration
+			http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+	<stream:stdout-channel-adapter id="stdOutChan" append-newline="true" auto-startup="true" />
+
+
+	<channel id="names" />
+
+	<service-activator input-channel="names" ref="helloService" method="sayHello" />
+
+	<beans:bean id="helloService" class="net.martenscs.spring.inte.simple.MyHelloService" />
+
+</beans:beans>

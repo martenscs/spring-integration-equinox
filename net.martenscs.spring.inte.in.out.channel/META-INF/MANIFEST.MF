@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Simple In Out Channel Example
+Bundle-SymbolicName: net.martenscs.spring.inte.in.out.channel
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.springframework.context.support;version="3.2.11.RELEASE",
+ org.springframework.integration.stream;version="3.0.5.RELEASE",
+ org.springframework.integration.stream.config;version="3.0.5.RELEASE",
+ org.springframework.scheduling.concurrent;version="3.2.11.RELEASE"
+Require-Bundle: spring-integration-core;bundle-version="3.0.5",
+ spring-integration-file;bundle-version="3.0.5"

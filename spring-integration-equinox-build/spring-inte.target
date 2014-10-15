@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+
+<target name="spring-inte" sequenceNumber="84">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.equinox.osgi.runtime.feature.group" version="0.0.1.201410081534"/>
+<unit id="org.eclipse.osgi.web.source.feature.group" version="1.0.0.201410081534"/>
+<unit id="org.eclipse.osgi.web.feature.group" version="1.0.0.201410081534"/>
+<repository location="http://p2.martenscs.net/equinox-runtime"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="spring.feature.group" version="3.2.11.RELEASE"/>
+<unit id="spring-dm.feature.group" version="1.2.1"/>
+<unit id="spring-dm-web.feature.group" version="1.2.1"/>
+<unit id="spring-integration.feature.group" version="3.0.5.RELEASE"/>
+<repository location="http://p2.martenscs.net/spring-integration/3.0.5.RELEASE/"/>
+</location>
+</locations>
+</target>
